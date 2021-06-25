@@ -14,7 +14,7 @@
 		</center>
 	</marquee>
 	<ul>
-		<li> <a href="datashop2.php">VIEW DATABASE</a> </li>
+		<li> <a href="admin.php">VIEW DATABASE</a> </li>
 		<li> <a href="login.php">LOG OUT</a> </li>
 	</ul>
 </head>
