@@ -17,8 +17,9 @@
 	  </center>
     </marquee>
     <ul>
-        <li> <a href="datashop1.php">VIEW DATABASE OF ATN SHOP 1</a> </li>
-		<li> <a href="datashop2.php">VIEW DATABASE OF ATN SHOP 2</a> </li>
+      <li> <a href="datashop1.php">VIEW DATABASE OF ATN SHOP 1</a> </li>
+		  <li> <a href="datashop2.php">VIEW DATABASE OF ATN SHOP 2</a> </li>
+      <li> <a href="admin.php">ADMIN PAGE</a> </li>
 	    <li> <a href="login.php">LOG OUT</a> </li>
     </ul>
   </head>
