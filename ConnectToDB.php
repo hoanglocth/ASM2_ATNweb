@@ -14,13 +14,13 @@ echo "Hello Cloud computing class 0818!";
 
 if (empty(getenv("DATABASE_URL"))){
     echo '<p>The DB does not exist</p>';
-    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=postgres', 'postgres', 'toor');
+    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=dc093vuc6gjaav', 'ubniakvyleptee', '237d8b8b0a1597a3f29b43a35aa8b02b413148386f81c7210be32fe2baaf259e');
 }  else {
      echo '<p>The DB exists</p>';
      echo getenv("dbname");
    $db = parse_url(getenv("DATABASE_URL"));
    $pdo = new PDO("pgsql:" . sprintf(
-        "host=ec2-174-129-240-67.compute-1.amazonaws.com;port=5432;user=wrflrxtavasvqh;password=fbfef36049fbd28f1200e3a775a389e014838e86522765e67782f9cf7a3f516b;dbname=d3mmhribgmc6bf",
+        "host=ec2-34-195-143-54.compute-1.amazonaws.com;port=5432;user=ubniakvyleptee;password=237d8b8b0a1597a3f29b43a35aa8b02b413148386f81c7210be32fe2baaf259e;dbname=dc093vuc6gjaav",
         $db["host"],
         $db["port"],
         $db["user"],
