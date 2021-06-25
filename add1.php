@@ -78,7 +78,7 @@ if ($_GET['submit']) {
   if ($data) {
     echo "<script>alert('Added Successfully!')</script>";
 ?>
-    <meta http-equiv="refresh" content="0; url=https://asm-atn-shop.herokuapp.com/shop1.php" />
+    <meta http-equiv="refresh" content="0; url=https://atn-toy-store-asm2.herokuapp.com/shop1.php" />
 <?php
   } else {
     echo "Failed to add product to the table.";
