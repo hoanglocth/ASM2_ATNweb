@@ -16,7 +16,7 @@ $qt=$_GET['qt'];
 ?>
 <html>
   <head>
-    <link rel="stylesheet" href ="styles.css">
+    <link rel="stylesheet" href ="/css/style.css">
     <title> Update </title>
     <marquee bgcolor="gray" 
              scrollamount="12" 

@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href ="styles.css">
+    <link rel="stylesheet" href ="/css/style.css">
     <title> ATN Shop </title>
     <marquee bgcolor="gray" 
              scrollamount="12" 
