@@ -29,7 +29,7 @@ if (!$pg_heroku) {
 <body>
   <style>
     body {
-      background-image: url('background.jpg');
+      background-image: url('background1.jpg');
       background-attachment: fixed;
       background-size: 100%100%;
     }
