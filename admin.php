@@ -1,45 +1,34 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Treasure You</title>
-	<link rel="stylesheet" href="css/style1.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<?php
-
-$db = parse_url(getenv("DATABASE_URL"));
-$pdo = new PDO("pgsql:" . sprintf(
-    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-    $db["host"],
-    $db["port"],
-    $db["user"],
-    $db["pass"],
-    ltrim($db["path"], "/")
-));
-	
-	$sql = "SELECT  id, name, price FROM Product";
-	$stmt = $pdo->prepare($sql);
-	
-	$stmt->setFetchMode(PDO::FETCH_ASSOC);
-	$stmt->execute();
-	$resultSet = $stmt->fetchAll();
-	
-?> 
-	<ul>
+	<head>
+    <link rel="stylesheet" href ="styles.css">
+    <title> Database </title>
+    <marquee bgcolor="gray" 
+             scrollamount="12" 
+             direction="left" 
+             onmouseover="this.stop();" 
+             onmouseout="this.start();">
+        <center>
 		<?php
-			foreach ($resultSet as $row)
-			{
-				echo"<li>" .
-					$row["id"] . '--' . $row["name"]. '--'. $row["price"]. "</li>";
-			}
+		date_default_timezone_set('Asia/Ho_Chi_Minh');
+		$date = getdate();
+			echo "<hr>";
+			echo "Today is: ".$date['weekday']."--".$date['mday']."/".$date['mon']."/".$date['year']."--".$date['hours'].":".$date['minutes'].":".$date['seconds'];
 		?>
-	</ul>
-		<a href="./addproduct.php">Add New Product</a>
-		<a href="./delete.php">Delete</a>
-		</div>
-</body>
+	  </center>
+    </marquee>
+    <ul>
+        <li> <a href="datashop1.php">VIEW DATABASE OF ATN SHOP 1</a> </li>
+		<li> <a href="datashop2.php">VIEW DATABASE OF ATN SHOP 2</a> </li>
+	    <li> <a href="login.php">LOG OUT</a> </li>
+    </ul>
+  </head>
+    <body>
+      <style>
+        body {
+          background-image: url('background.jpg');
+          background-attachment: fixed;
+          background-size: 100%100%;
+        } 
+      </style>		 
+	</body>
 </html>

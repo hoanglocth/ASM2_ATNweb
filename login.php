@@ -1,24 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Treasure You</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="/style.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href ="styles.css">
+    <title> Login </title>
+    <marquee bgcolor="gray" 
+             scrollamount="12" 
+             direction="left" 
+             onmouseover="this.stop();" 
+             onmouseout="this.start();">
+        <center>
+		<?php
+		date_default_timezone_set('Asia/Ho_Chi_Minh');
+		$date = getdate();
+			echo "<hr>";
+			echo "Today is: ".$date['weekday']."--".$date['mday']."/".$date['mon']."/".$date['year']."--".$date['hours'].":".$date['minutes'].":".$date['seconds'];
+		?>
+	  </center>
+    </marquee>
+    <ul> 
+        <li> <a href="index.php">HOMEPAGE</a></li>
+        <li> <a href="">LOGIN</a></li>       
+    </ul>
+  </head>
+    <body>
+      <style>
+        body {
+          background-image: url('background1.jpg');
+          background-attachment: fixed;
+          background-size: 100%100%;
+        } 
+      </style>
+      <div>
+	      <h2 style="color:black;" align="center">LOGIN SESSION</h2>
+		<form style="color:black;" align="center" method="POST">
+		Username:<input type="text" name="userid"> <br><br>
+		Password:&nbsp;<input type="password" name="password"> <br><br>
+	<input type="submit" value="LOGIN">
+    </form>
+    </div>
 	<?php
-	?>
-	<img src="https://www.chuu.co.kr/images/main/banners/top-area/main-banner/b/7.jpg" class="content">
-		<div>
-			<h1>Login</h1>
-			<form border = "1px" action="admin.php" method="POST">
-			<input type="text" name="admin" placeholder="Username">
-			<input type="password" name="admin" placeholder="Password">
-			<input type="submit" value="Login">
-		</form>
-		</div>
-</body>
+	    if(isset($_POST['userid']) && isset($_POST['password']))
+    		{
+    		$user = $_POST['userid'];
+    		$pass= $_POST['password'];
+    		}
+        	if($user == "shop1" && $pass == "shop1"){
+           	header("location:shop1.php");
+        	}
+	    	if($user == "shop2" && $pass == "shop2"){
+           	header("location:shop2.php");
+        	}
+		if($user == "admin" && $pass == "admin"){
+		header("location:admin.php");
+		}  
+	?> 
+    </body>
 </html>
