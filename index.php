@@ -1,63 +1,180 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href='https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-<script src="js/login.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login</title>
+	<title>Treasure You</title>
+	<style>
+		.header{
+	height: 50px;
+	top: 0;
+	position: sticky;
+	margin-bottom: 20px;
+	z-index: 2;
+}
+.logo{
+	height: 40px;
+	margin: 5px 10px;
+
+}
+.form-control{
+	margin-top: 9px;
+	margin-left: 30px;
+	border:  1px solid black !important;
+	border-top-left-radius: 20px !important;
+	border-bottom-left-radius: 20px !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	box-shadow: none !important;
+}
+.input-group-text{
+	background: black;
+	border:  1px solid black !important;
+	margin: 8.5px 10px 3px 0 !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border-top-right-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;
+	cursor: pointer;
+}
+.search{
+	display: inline-flex;
+	width: 60%;
+}
+.fa-search{
+	color: black;
+}
+.menu{
+	width: 20%;
+	height: 30px;
+	float: right;
+}
+.menu ul{
+	display: inline-flex;
+	float: right;
+}
+.menu ul li{
+	border-left:  1px solid #fff;
+	list-style-type: none;
+	padding:  15px 35px;
+	text-align: center;
+	background-color: #EFAFD4;
+	cursor: pointer;
+}
+.menu ul li a{
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+.shopping-cart{
+	margin-right: 5px;
+}
+@media only screen amd (max-width: 980px){
+	.header{
+		height: 118px;
+		border-bottom: 0;
+	}
+	.search{
+		width: 100%;
+	}
+	.menu{
+		width: 100%;
+	}
+	.menu ul{
+		margin: 10px 0;
+		width: 100%;
+	}
+	.menu ul li{
+		height: 57px;
+		width: 100%;
+	}
+}
+.content{
+	overflow: visible;
+	width: 100%;
+}
+.left{
+	width: 20%;
+	float: left;
+	height: auto;
+	background-color: #FDA9CD;
+}
+.category ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.category a{
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 35px;
+	color: #7EFBF1;
+	padding-left: 15px;
+	display: block;
+}
+.category a:hover{
+	background-color: #F8CFCF;
+	color: #454593;
+}
+.main{
+	width: 70%;
+	float: left;
+	height: auto;
+}
+.item1{
+	height: 500px;
+	width: 32%;
+	margin: 0.5%;
+	float: left;
+}
+.item2{
+	height: 600px;
+	width: 49%;
+	margin: 0.5%;
+	float: left;
+}
+.product{
+	height: 150px;
+	width: 20%;
+	float: left;
+	margin: 0.5%;
+}
+.name{
+	text-align: center;
+    line-height: 12px;
+    padding-bottom: 8px;
+    position: relative;
+}
+.image{
+	height: 400px;
+}
+.price{
+	text-align: center;
+}
+.product-group-title{
+	width: 100%;
+	float: left;
+	height: 500px;
+	margin: 0;
+	padding: 0;
+}
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<?php
-if($_SESSION['logged'] == true)
-{
-	header("location:welcome.php");
-}
-?>
-<!--header-->
+	
+<?php 
+ ?>
 <div class="header">
-	<div class="header-top">
-		<div class="container">
-			<div class="header-top-in">
-				<div class="header-in">
-					<ul class="icon1 sub-icon1">
-						<li ><a href="#" > </a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
+<div class="menu">
+	<ul>
+		<li><a href="login.php">Log in</a></li>
+	</ul>	
 </div>
-<div class="container">
-	<div class="account">
-		<h2 class="account-in">Login</h2>
-		<form method = "POST" action = "loginBG.php">
-			<table>
-				<tr>
-					<td><label for="username">Username:&nbsp;&nbsp;</label></td>
-					<td><input type="text" name="username" id="username" size = "40"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><br /></td>
-				</tr>
-				<tr>
-					<td><label for="password">Password:</label></td>
-					<td><input type="password" name="password" id="password"></td>
-				</tr>
-			</table>
-			<br />
-			<input type = "submit" id = "button" value = "login" onclick = "return allCheck(getUsername(),getPassword())"/>
-		</form>
-		<p id = "result"></p>
-		<br />
-		<p>Don't have an account?</p>
-		<a href = "register.php">Register</a>
-	</div>
 </div>
 
+	<img src="https://www.chuu.co.kr/images/main/banners/top-area/main-banner/b/7.jpg" class="content">
 </body>
 </html>
