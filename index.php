@@ -68,7 +68,7 @@
 .shopping-cart{
 	margin-right: 5px;
 }
-@media only screen amd (max-width: 980px){
+@media only screen and (max-width: 980px){
 	.header{
 		height: 118px;
 		border-bottom: 0;
@@ -175,6 +175,6 @@
 </div>
 </div>
 
-	<img src="https://www.chuu.co.kr/images/main/banners/top-area/main-banner/b/7.jpg" class="content">
+	<img src="http://media.hanoitv.vn/files/kimthanh/2020-11-23/Toy-Story-25th-Anniversary-Poster.jpg" class="content">
 </body>
 </html>
