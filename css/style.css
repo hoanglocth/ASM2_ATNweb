@@ -44,19 +44,45 @@ td {
   padding: 10px;
   text-shadow: 1px 1px 1px #fff;
 }
+
 input[type=submit] {
-  position: relative;
-  background-color: #1d302d;
-  border: none;
-  font-size: 13px;
-  color: #FFFFFF;
-  padding: 10px;
-  width: 100px;
-  text-align: center;
-  transition-duration: 0.4s;
+  display: block;
+  margin:0 auto;
   text-decoration: none;
-  overflow: hidden;
+  border: none;
+  outline: 0;
   cursor: pointer;
+  color: #fff;
+  background: #555;
+  font-weight: bold;
+  position: relative;
+  height: 3.0em;
+  line-height: 3.0em;
+  width: 100px;
+  padding: 0 0.8em 0 1.2em;
+  transition: 0.5s;
+}
+input[type=submit]::after {
+  transition: 0.5s;
+  content: "";
+  width: .6em;
+  height: .6em;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+input[type=submit]:hover::after {
+  right: 12px;
+}
+input[type="submit"]:hover {
+  background: #134767;
 }
 
 p {
