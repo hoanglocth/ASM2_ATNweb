@@ -44,7 +44,6 @@ td {
   padding: 10px;
   text-shadow: 1px 1px 1px #fff;
 }
-
 input[type=submit] {
   display: block;
   margin:0 auto;
@@ -78,17 +77,18 @@ input[type=submit]::after {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 input[type=submit]:hover::after {
   right: 12px;
 }
+
 input[type="submit"]:hover {
   background: #134767;
 }
-
 p {
-  color: #1d302d; 
+  color: #ffffff; 
   font-family: 'Raleway',sans-serif; 
-  font-size: 20px; font-weight: 400; 
+  font-size: 20px; font-weight: 300; 
   line-height: 30px; margin: 0 0 1; 
   text-align: center; 
   text-transform: uppercase;
