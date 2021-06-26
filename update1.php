@@ -18,13 +18,10 @@ $qt = $_GET['qt'];
 <head>
   <link rel="stylesheet" href="/css/style.css">
   <title> Update </title>
-  <marquee bgcolor="gray" scrollamount="12" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+  <marquee bgcolor="gray" scrollamount="20" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
     <center>
       <?php
-      date_default_timezone_set('Asia/Ho_Chi_Minh');
-      $date = getdate();
-      echo "<hr>";
-      echo "Today is: " . $date['weekday'] . "--" . $date['mday'] . "/" . $date['mon'] . "/" . $date['year'] . "--" . $date['hours'] . ":" . $date['minutes'] . ":" . $date['seconds'];
+      			echo "<p> <font color=white>TODAY ATN TOY STORE SALE UP TO 50%</font> </p>";
       ?>
     </center>
   </marquee>

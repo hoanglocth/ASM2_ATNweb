@@ -7,10 +7,10 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #ae967f;
 }
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -22,7 +22,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #a28c87;
 }
 table {
   border: solid 1px #DDEEEE;
@@ -46,7 +46,7 @@ td {
 }
 input[type=submit] {
   position: relative;
-  background-color: #4CAF50;
+  background-color: #1d302d;
   border: none;
   font-size: 13px;
   color: #FFFFFF;
@@ -62,8 +62,8 @@ input[type=submit] {
 p {
   color: #ffffff; 
   font-family: 'Raleway',sans-serif; 
-  font-size: 15px; font-weight: 200; 
-  line-height: 18px; margin: 0 0 6; 
+  font-size: 20px; font-weight: 300; 
+  line-height: 30px; margin: 0 0 1; 
   text-align: center; 
   text-transform: uppercase;
 }
