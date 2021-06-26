@@ -34,6 +34,7 @@
 				<th>Quantity</th>
 			</tr>
 			<?php
+			echo '<p>ATN SHOP 1</p>';
 			require 'connectdb.php';
 			$query = 'select * from atnshop1 order by productid';
 			$data = pg_query($pg_heroku, $query);
