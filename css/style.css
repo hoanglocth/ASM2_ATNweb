@@ -86,7 +86,7 @@ input[type="submit"]:hover {
   background: #134767;
 }
 p {
-  color: #ffffff; 
+  color: #333; 
   font-family: 'Raleway',sans-serif; 
   font-size: 20px; font-weight: 300; 
   line-height: 30px; margin: 0 0 1; 
