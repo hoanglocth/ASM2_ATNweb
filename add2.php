@@ -19,8 +19,11 @@ require 'connectdb.php';
   <style>
     body {
       background-image: url('background1.jpg');
-      background-attachment: fixed;
-      background-size: 100%100%;
+      min-height: 500px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
     }
   </style>
   <br>

@@ -21,8 +21,11 @@
   <style>
     body {
       background-image: url('background.jpg');
-      background-attachment: fixed;
-      background-size: 100%100%;
+      min-height: 500px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
     }
   </style>
 </body>
